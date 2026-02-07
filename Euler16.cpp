@@ -3,8 +3,13 @@
 using namespace std;
 
 int main() {
+    // computes the sum of digits for 2^N
+    // with N <= 10000
+    // this code is intended to provide answers
+    // for a number of queries with different N
+    // so it computes all values up to max
     clock_t c_start = clock();
-    int N, carry;
+    int N, carry, j;
     int *digits = new int [10001];
     int *summa = new int [10001];
     //memset(digits,-1,sizeof(digits));
@@ -17,7 +22,7 @@ int main() {
     digits[0] = 2;
     summa[0] = 2;
     for (int i = 1; i != 10001; i++) {
-        int j = 0;
+        j = 0;
         carry = 0;
         //multiply digit by digit
         while(j != 10001) {

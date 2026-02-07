@@ -20,6 +20,9 @@ Using Python's native big number and string operations, the task is incredibly e
 Just directly compute the result, then read it as string one by one digit and add them up.
 And it takes just $0.1$ms for $2^{1000}$.
 
-In C++ without such cheats the task is more difficult.
-
+In C++ without such cheats the task is slightly more difficult. There I implemented multiplication
+digit by digit, using C-style arrays rather than C++ vectors to keep the digits and the resulting
+digit sum. Because it was intended for Hackerrank, the code was supposed to process many quieries
+with different powers of 2 below or equal $10000$. So I start by precalculating all of them.
+The whole operation, despite having two enclosed loops, takes only about 30ms.
 
