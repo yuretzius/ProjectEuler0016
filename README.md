@@ -1,7 +1,7 @@
 # ProjectEuler0016
 My work on 
 
-problem #16 of projecteuler.net:
+[problem #16 of projecteuler.net](https://projecteuler.net/problem=16):
 
 Power Digit Sum
 
