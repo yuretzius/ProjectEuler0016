@@ -10,4 +10,4 @@ for i in numb:
 
 end = perf_counter()
 print(sum)
-print(end - start,'sec')
+print((end - start)*1000,'ms')
